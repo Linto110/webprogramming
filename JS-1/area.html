@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>area circle</title>
+  </head>
+  <body bgcolor="Slateblue">
+    <div class="main">
+      <label>Base :</label><br />
+      <input type="text" id="base" /><br />
+      <label>Height :</label><br />
+      <input type="text" id="height" /><br /><br />
+      <button type="submit" onclick="fun()">click</button>
+      <p id="result">Hi calculate area by height and base.</p>
+    </div>
+    <script>
+      function fun() {
+        let base = parseInt(document.getElementById("base").value);
+        let height = parseInt(document.getElementById("height").value);
+        let area = (base * height) / 2;
+        document.getElementById(
+          "result"
+        ).innerHTML = `The area of the triangle is ${area}`;
+      }
+    </script>
+  </body>
+</html>
