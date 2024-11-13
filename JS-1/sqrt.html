@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>square root</title>
+  </head>
+  <body bgcolor="#0FF5FE">
+    <h1>Square root</h1>
+    <label>Enter the number :</lable> <input type="number" id="num" />
+    <button type="submit" onclick="sum()">Check</button>
+    <p id="result">Look here!!</p>
+    <script>
+      function sum() {
+        let num = parseInt(document.getElementById("num").value);
+       document.getElementById("result").innerText=`Th sqrt of ${num} is ${Math.sqrt(num)}`;
+      }
+    </script>
+  </body>
+</html>
