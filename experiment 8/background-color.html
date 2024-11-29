@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>
+        background-color</title>
+    </head>
+    <body>
+        <h1>Change background color on click</h1>
+        <button id="change_color">Change bgcolor</button>
+        <script>
+             let last_color=''
+             colors=["red", "green", "blue", "yellow", "orange", "purple", "pink", "gray", "white", "cyan"];
+            change=document.getElementById('change_color');
+                change.addEventListener('click', function() {
+            let index;
+            do {
+                index = Math.floor(Math.random() * colors.length); 
+            } while (colors[index] === last_color);
+            last_color = colors[index];
+            document.body.style.backgroundColor = last_color;
+        });
+        </script>
+        </body>
+ </body>
+ </html>
